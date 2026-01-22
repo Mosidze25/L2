@@ -1,0 +1,11 @@
+2026-01-23 01:01:44
+
+This lab demonstrates asymmetric (RSA) and symmetric (AES) encryption on the same plaintext file.
+RSA uses a public key to encrypt and a private key to decrypt (two-key system). It is computationally expensive
+and is not designed for bulk file encryption; in real systems RSA (or ECDHE/RSA) is used mainly to authenticate
+and to establish or protect symmetric keys.
+
+AES is a symmetric cipher where the same secret key is used for encryption and decryption. AES-256 is fast and
+is the standard choice for encrypting files and large data. Real-world protocols (e.g., TLS/HTTPS) typically use
+public-key cryptography only during key exchange/authentication and then use AES (or ChaCha20) to encrypt data
+in transit or at rest.
